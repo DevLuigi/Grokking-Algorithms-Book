@@ -8,7 +8,7 @@ def binary_search(array, item):
     # while you haven't narrowed it down to one element yet
     while low <= high:
         # round down the middle index
-        middle = math.floor((low + high) / 2)
+        middle = (low + high) // 2
         guess = array[middle] 
         
         # if you've found the item, return its index
