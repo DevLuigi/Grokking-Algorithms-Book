@@ -1,4 +1,4 @@
-import math;
+import time;
 
 def binary_search(array, item):
     # low and high keep track of which part of the list you're searching
@@ -26,4 +26,9 @@ def binary_search(array, item):
     return None
 
 my_array = [1, 2, 3, 4, 5, 6, 7, 8]
-print(binary_search(my_array, 5))
+
+start_time = time.time()
+print(binary_search(my_array, 8))
+execution_time = time.time() - start_time
+
+print(f"--- {execution_time:.6f} segundos ---")
